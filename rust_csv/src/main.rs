@@ -11,7 +11,6 @@ fn main() -> Result<(), Box<dyn Error>> {
     for result in rdr.records() {
         let record: csv::StringRecord = result?;
         for field in record.iter() {
-
             print!("{} ", field);
         }
         println!();
